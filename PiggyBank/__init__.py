@@ -23,11 +23,6 @@ def create_app():
 
     from PiggyBank.bank.routes import bank
 
-
-    @app.route('/two')
-    def two():
-        return {'success': 'another one'}, 200
-
     app.register_blueprint(bank)
 
 
